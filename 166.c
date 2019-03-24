@@ -1,0 +1,31 @@
+#include<stdio.h>
+void main()
+{
+    int a,b,f1=1,f2=1,i,m=0;
+    scanf("%d%d",&a,&b);
+    for(i=1;i<=a;i++)
+    {
+        f1=f1*i;
+    }
+    for(i=1;i<=b;i++)
+    {
+        f2=f2*i;
+    }
+    //printf("%d%d",f1,f2);
+    if(f1<f2)
+    {
+    m=f1;
+    }
+    else
+    {
+    m=f2;
+    }
+    for(i=m;i>0;i--)
+    {
+        if(f1%i==0&&f2%i==0)
+        {
+            printf("%d",i);
+            break;
+        }
+    }
+}
