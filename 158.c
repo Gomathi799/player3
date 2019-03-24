@@ -11,7 +11,6 @@ void main()
         i=i*10;
         c=c/2;
     }
-    printf("%d ",n);
     while(n)
     {
         k=n%10;
